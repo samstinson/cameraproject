@@ -68,10 +68,13 @@ difference(){
 
     // cutaway sections
 //    translate([19.9,-20,-0.1]) cube([20.2,80,80.2]);
-    translate([-0.1,-20,-0.1]) cube([20.2,80,80.2]);
-//    translate([-0.1,-20,-0.1]) cube([10.4,80,80.2]);
-//    translate([29.7,-20,-0.1]) cube([10.4,80,80.2]);
-
+//    translate([-0.1,-20,-0.1]) cube([20.2,80,80.2]);
+//    translate([-0.1,-20,-0.1]) cube([10.05,80,80.2]);
+//    translate([30.05,-20,-0.1]) cube([10.05,80,80.2]);
+//    translate([0,20,-0.1]) cube ([41,25,80.2]);
+//    translate([0,-20,-0.1]) cube ([41,35,80.2]);
+//     translate([-0.1,-20,-0.1]) cube([30.15,80,80.2]);
+//    translate([9.95,-20,-0.1]) cube([30.15,80,80.2]);
 
     // 20x20 extrusion, just use a cube...
     translate([9.95,9.95,-0.1]) cube([20.1,20.1,80.2]);  
@@ -93,7 +96,7 @@ difference(){
         // belt pulley + bearings
         translate([13.95,-2.5,40]) rotate([0,90,0]) cylinder(d=21,h=17.1);
         translate([-0.1,-2.5,40]) rotate([0,90,0]) cylinder(d=16,h=40.2);
-        translate([15,-2.5,29.5]) cube([15,21,21]);
+        translate([15,-2.5,29.5]) cube([15.05,21,21]);
         translate([34,-2.5,40]) rotate([0,90,0]) cylinder(d=19,h=6.1);
         translate([-0.1,-2.5,40]) rotate([0,90,0]) cylinder(d=19,h=6.1);
     }
