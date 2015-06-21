@@ -1,9 +1,9 @@
 // generic lens cap
 
-cap_id = 118; // outer diameter of lens barrel
+cap_id = 119; // outer diameter of lens barrel
 cap_height = 35; // height of inner surface
-cap_thick = 3; // wall thickness of the cap
-felt_thick = 0.7; // thickness of self-adhesive felt used to line inner surface of cap
+cap_thick = 4; // wall thickness of the cap
+felt_thick = 0.6; // thickness of self-adhesive felt used to line inner surface of cap
 felt_width = 20; // width of felt used to line inner surface of cap
 round_corner = min(1, cap_thick/2); // round corners to this radius, clamped to half of wall thickness
 
@@ -14,7 +14,7 @@ logo_name = "schneider_logo.dxf";
 
 F=0.1;  //fudge factor, openscad can't even manifold...
 
-
+//difference(){
 union(){
     rotate_extrude(convexity=1, $fn=720)
         difference() {
@@ -69,4 +69,6 @@ union(){
                         import(logo_name);
     }
 }
-
+//translate([0,0,-2*F]) cylinder(d=cap_id+cap_thick*2+F,h=27,$fn=180);
+//}
+//import("C:/Users/samstinson/Desktop/test_lenscap_ring.stl");
